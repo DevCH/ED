@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* CSS Document */
+
+table,th,tr,td{padding:0; margin:0; border:0;}
+
+.table_base{ 
+	position:relative;
+	display:inline-block;
+	width:96%;
+	height:auto;
+	border-collapse:collapse;
+	border:0px;
+	padding:0px;
+	margin:0px;
+	color:black;
+}
+
+.table_base th, .table_base tr, .table_base td { height:1em; line-height:1em; padding:0.3em; border-bottom:#CCC 1px solid;}
+.table_base tr { height:1em; line-height:1em; padding:0.3em; border-bottom:#CCC 1px solid;}
+.table_base tr:hover{ background-color:#BBB; cursor:pointer;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+
+
+
+th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+tfoot, tfoot tr, tfoot tr td { height:2em !important;}
+
+
+.detFac {
+	position:relative;
+display:inline-block;
+vertical-align:top;
+background:#FFF;
+padding:0.5em;
+}
+.detFac tr{  border:none; }
+.detFac tr th{ background-color:#333; color:#FFF; padding:0.5em; border:0; position:relative;}
+.detFac tr td{ padding:0.2em !important; border:1px #CCC solid !important; position:relative;}
+.detFac tr td input{ position:relative; display:inline-block; border:0; }
+.detFac tr td select.listaContratoDetalles{ position:relative; display:inline-block; width:60px; }
+.detFac tr td input.inw50{ width:50px;}
+.detFac tr td input.inw80{ width:80px;}
+.detFac tr td input.inw100{ width:100px;}
+.detFac tr td input.inw200{ width:200px;}
+.detFac caption{ padding:0.5em; font:bold; color:#333;}
+
+#divBotonesDerechos{position:relative; display:inline-block; vertical-align:top; margin-left:1em; width:100px;}
+
+ .facPag{background-color:#C99 !important;}

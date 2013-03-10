@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.div1em{position:relative; width:100%; height:1em; clear:both;}
+.moneyBg{-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px; background-color:white; color:#666; padding:0.25em 0.5em; }
+
+.oPag{-webkit-border-radius: 4px; width:1em !important;
+-moz-border-radius: 4px;
+border-radius: 4px;
+background-color:#FFF; color:#666 !important; -moz-opacity:0.5; -webkit-opacity:0.5; -o-opacity:0.5;filter: alpha(opacity=50);
+padding:4px; margin-left:0.6em; display:inline-block; cursor:pointer; vertical-align:top; margin-bottom:0.5em !important; text-align:center !important;  
+}
+.oPagNormal{font:normal !important;}
+.oPagBold{font:bold !important; color:#000 !important; }
+
+.cmdButton{
+	display: inline-block;
+	background-color:#999 !important;
+	background-position:top left;
+	background-repeat:no-repeat;
+	border:0px;
+	border-radius:0.5em;
+	color: #FFF;
+	cursor: pointer;
+	padding:0.3em 0.5em;
+	margin-bottom:1em;
+	line-height:16px;
+	height:16px;
+	width:80px;
+	text-align:left !important;
+}
+.cmdButton:hover{
+   -moz-box-shadow:    inset 0 0 6px #FFF;
+   -webkit-box-shadow: inset 0 0 6px #FFF;
+   box-shadow:         inset 0 0 6px #FFF;
+}
+
+.btnPlusIcon{ position:relative; display:inline-block; width:14px; height:14px; background-image: url(../../images/img-web/plus-icon-2.png) !important; }
+.btnMinusIcon{ position:relative; display:inline-block; width:14px; height:16px; background-image: url(../../images/img-web/minus-icon.png) !important; }
+.delCurrentItemSpan{ position:relative; display:inline-block; width:60px; height:18px; line-height:1.8em; 
+				 background: url(../../images/img-web/minus-icon-18px.png) top left no-repeat !important; padding-left:1.8em; }
+.delCurrentItemSpan:hover{ -moz-box-shadow:inset 0 0 6px #FFF; -webkit-box-shadow:inset 0 0 6px #FFF; 
+					box-shadow:inset 0 0 6px #FFF;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+
+#spanTitle{position:relative; float:right; margin:0.5em 1em 0 0; font-size:1.5em; text-shadow:#CC9 0.1em 0.1em 0.2em;}
+
+.heightTit{height:1.5em !important;}
+
+.formSearchMini{text-align:left; margin-left:1em; width:90%;}
+
+.th-dep{position:relative; width:auto; text-align:left; font:1em Arial, Helvetica, sans-serif normal; }
+.container-rep{min-width: 400px; height: 640px; margin: 0 auto; padding:2em; 
+			padding-top:4em; font:2em Arial, Helvetica, sans-serif message-box; 
+			background:url(../../php/01/docs/imgs/logo-h-1.gif) top left no-repeat;}
+
+
+

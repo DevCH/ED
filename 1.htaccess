@@ -1,0 +1,30 @@
+RewriteEngine On
+
+
+RewriteRule getEC/ php/01/getDataCat.php [L]        
+RewriteRule getEH/ php/01/getDataHTML.php [L]        
+RewriteRule getDC/ php/01/getLogin.php [L]              
+
+RewriteRule getSR/ php/01/getSearch.php [L]              
+
+RewriteRule getSL/ php/01/getConfigLS.php [L]              
+  
+RewriteRule dashboard/ principal.php [L]      
+RewriteRule upfile/ php/01/com/uploadFilex.php [L]      
+
+RewriteRule seted/ php/01/com/registry.php [L]        
+RewriteRule getResponseWeb/ php/01/getDataCat.php [L]        
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)tabascoweb.com(/)?.*$ [NC]
+
+##RewriteRule .*\.(gif|jpg|jpeg|bmp|png)$ http://www.diariopresente.com.mx/images/ [R,NC]
+#RewriteRule .*\.(gif|jpg|jpeg|bmp|png)$ http://dc.tabascoweb.com/images/img-web/ [R,NC]
+
+RewriteCond %{HTTP_HOST} ^tabascoweb.com                     
+RewriteRule (.*) http://www.tabascoweb.com/$1 [R=301,L]
+
+## Otros
+
+
+##GPMpr3s3nt31t

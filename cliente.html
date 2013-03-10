@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Chat Genesis v3.0</title> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="http://187.157.37.204:8080/socket.io/socket.io.js" > </script> 
+	<script src="code-gen.js" > </script> 
+	<script>
+	var IdUser = Math.floor(Math.random()*100);
+	var tsound = 0;
+	if (!localStorage.nc){
+	    IdUser = IdUser+" dice "
+	}else{
+	    IdUser = localStorage.nc.toUpperCase();
+	    tsound = 1;
+	}
+
+	</script>
+</head>
+
+<body>
+	<header>
+		<h1>Bienvenido...</h1>
+		<ul> </ul>
+	</header>
+	
+	<section>
+		<form id="formulario" class="degradado">
+			<label for="nombre">Mensaje: </label>	
+			<input type="text" id="nombre" />
+			<input type="submit" id="enviar" value="Enviar">
+		</form>
+		
+	</section>
+	
+	
+		
+	<footer class="degradado">
+		Grupo Presente Multimedios &copy; 2013
+	</footer>
+
+<embed src="sounds/Silent_Beep.mp3" autostart="false" width="0" height="0" id="sound0" enablejavascript="true">
+<!--<embed src="sounds/Facebook_Chat_Beep.mp3" autostart="false" width="0" height="0" id="sound1" enablejavascript="true">-->
+<embed src="sounds/Beep.mp3" autostart="false" width="0" height="0" id="sound1" enablejavascript="true">
+
+</body>	
+
+</html>

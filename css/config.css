@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+@import "css/01/forms.css";
+@import "01/forms.css";
+@import "css/01/tables.css";
+*/
+
+@import "01/forms.css";
+@import "01/tables.css";
+
+
+
+article, footer, header, section, nav{
+	padding:0.2em;
+	display:block;
+	font-size: 12px;
+}
+html{
+	margin:0px;
+	height:100%;
+}
+body{
+	background-color:#263E5A;
+	font-family:  Arial;
+	font-size: 12px;
+	height:100%;
+}
+
+header, footer, section{
+	background-color: #FFF;
+	border-radius:0.5em;
+	/*
+	-webkit-border-radius:0.5em;
+	-o-border-radius:0.5em;
+	-moz-border-radius:0.5em;
+	-ms-border-radius:0.5em;
+	*/
+	box-shadow:rgba(0,0,0,0.5) 0px 5px 10px;
+	margin: 1em auto;
+	text-align: center;
+	width:98%;
+}
+/*
+.box {
+  display: +flex;
+  +justify-content: center;
+  +align-items: center;
+ }
+*/
+header{
+	color: #FFF;
+	text-align: center;				  
+}
+h1{font-size:16px; color:#333; width:100% !important;}
+h1 #span1{font-size:14px; font-weight:normal; text-align:left; width:57%; height:1em;  display:inline-block;}
+h1 #span2{font-size:14px; font-weight:normal; text-align:right; width:42%; height:1em; display:inline-block;}
+#spanTit{ font-weight:bold; color:#333;}
+#spanUser{ color:#039; font-weight:bold; text-transform:capitalize;}
+#closeSession{ color:#C60; font-weight:bold; cursor:pointer; }
+h2{font-size:14px; color:#333;}
+
+#bodysec{ text-align:center;background:#FFF url(../images/img-web/sidc-logo-2.jpg) top left no-repeat; height:auto;  }
+
+
+
+/* Init Acoordion*/
+#accordion{ width:10%; display:inline-block; vertical-align:top; font-size:13px; overflow:hidden;}
+#accordion div{ overflow:hidden; height:auto !important;}
+
+.btnMnuHome{ display:inline-block; margin:0.2em; 
+		   border-radius:0.2em;box-shadow: rgba(0,0,0,0.5) 1px -1px 3px inset; cursor:pointer; text-decoration:none; 
+		   vertical-align:top; padding:0.5em; }
+.btnMnuHome > img{ display:block; width:32px; height:32px; }
+
+/* End Accordion */
+
+/* Módulo de Asignación || INICIO */
+.asignaciones1{ position:relative; display:inline-block; vertical-align:top; width:87%; margin-left:1em; 
+			 background:#FFF; height:100% !important; }
+
+.asignaciones2{ background:#FFF url(../images/img-web/sidc-logo-2-inner.jpg) top left no-repeat; }
+.asignaciones1 h2{ color:#03C;}
+
+
+.asignaciones1 #dialog, .asignaciones1 #dialog #catProp{ position:relative; display:inline-block; vertical-align:top; width:100%; margin-left:1em; height:100%;}
+
+.desdeCat{position:relative; display:inline-block; vertical-align:top; width:39%; min-height:10em; height:94%; overflow:hidden;}
+.botonesAsignacion{position:relative; display:inline-block; vertical-align:top; width:11%; margin-left:1em; min-height:10em; height:96% !important; overflow:hidden;}
+.hastaCat{position:relative; display:inline-block; vertical-align:top; width:38%; margin-left:1em; min-height:10em; height:94% !important; overflow:hidden;}
+
+.contentButtonAD{position:relative;  height:80px; top:45%;}
+
+.listDesde{ position:relative; width:90%; height:86%; overflow:hidden;}
+.listHasta{ position:relative; width:90%; height:79%; overflow:hidden;}
+.lblH2{position:relative; display:inline-block; font-size:16px; color:#333; height:1.2em; font-weight:bold; 
+	  padding:0.3em 1em; text-align:left; width:100%;}
+
+.lblH2cmb{position:relative; display:inline; font-size:16px; color:#333; font-weight:bold; padding:0.3em; text-align:left;}
+/* Módulo de Asignación || FINALIZA */
+
+.p-pre-loader{ height:24px; border:none; margin:0px; padding:0px;}
+.p-pre-loader img{ display:inline-block; vertical-align:top; width:24px; height:24px;}
+.p-pre-loader span{ display:inline-block; vertical-align:top; padding-top:4px;}
+
+#msgResponse{position:relative; height:auto; padding:0.5em; text-align:left;color:#444; 	background-color: #FFF; display:none;
+	border-radius:0.2em;box-shadow:rgba(0,0,0,0.2) 0px 2px 5px;text-align: left !important;width:98%; margin:0.1em 0.2em 1em 0.2em;}
+#msgResponse ul, #msgResponse li{position:relative;list-style:square outside; text-align:left; padding:0px; margin-left:1em;}
+.msgFontError{color:#A00 !important; font-weight:bold;}
+.msgFontOk{color:#050 !important; font-weight:bold;}
+
+.formLogin{
+position: absolute;
+top: 55%; /* Buscamos el centro horizontal (relativo) del navegador */
+left: 40%; /* Buscamos el centro vertical (relativo) del navegador */
+}

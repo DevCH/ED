@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* */
+
+/* Init -> FORMS */
+.form{
+	position:relative;
+	background:#263E5A;
+	border-radius:0.5em;
+	color: #FFF;
+	padding: 1em;
+	display:inline-block;
+}
+
+.form label{
+	display: inline-block;
+	text-align:left;
+}
+.form input{
+	display: inline-block;
+	color:#2394C4; /* Color de la Letra de los Input */
+}
+
+.form input[type="submit"]{
+	display: inline-block;
+	background-color: #721b00;
+	border:none;
+	border-radius:0.3em;
+	box-shadow: rgba(0,0,0,0.5) 5px -5px 10px inset;
+	color: #FFF;
+	cursor: pointer;
+	text-align:right;
+	padding:0.3em 0.5em;
+}
+
+.form h3{ position:relative; text-align:left; margin:0px; border:none; padding-bottom:0.4em;
+		color:#03C; border-bottom:1px #DDD solid; width:100%; margin-bottom:0.8em;}
+
+
+.form fieldset{ border:none; margin:0px; padding:0px; margin-bottom:0.7em; width:100%; text-align:left; display:inline-block;}
+.fieldset2{margin-bottom:-0.5em !important;}
+
+.fieldset-margin-left{ margin-left:1em;}
+#formLogin{width:250px;margin: 0em auto}
+
+.lblLogin{ width:65px;}
+
+/* End <- FORMS */
+
+
+#form_test{position:relative; width:100%;}
+#form_test fieldset{position:relative; width:100%; text-align:left; border:none;}
+
+
+
+
+
+select[name="selCombo"]{ width:71%;}
+select[name="selIdPerUserCat"]{ width:290px;}
+
+#form-respuesta-dep fieldset{position:relative; width:100%; text-align:left; border:none; margin-bottom:1em !important;}
+.1emBottom{height:2em !important; margin-bottom:1em !important; line-height:1.5em !important;}
+
+
+
+
+
+    
