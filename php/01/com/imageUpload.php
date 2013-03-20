@@ -16,6 +16,7 @@
 <?php
 $idreg  = $_POST['idreg'];
 $iduser = $_POST['iduser'];
+$tfoto = $_POST['tfoto'];
 ?>
 <style>
 #lista-imagenes li{ list-style:none;}
@@ -26,6 +27,7 @@ $iduser = $_POST['iduser'];
             <input type="file" id="file" name="file[]"  class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" multiple><span class="ui-icon ui-icon-image"></span></input>
 		  <input type="hidden" id="oculto" name="oculto" value="<?php echo $idreg; ?>" />
 		  <input type="hidden" id="iduser" name="iduser" value="<?php echo $iduser; ?>" />
+		  <input type="hidden" id="tfoto" name="tfoto" value="<?php echo $tfoto; ?>" />
             <button id="btnSubmit">Subir archivo</button>
 		  
             <ul id="lista-imagenes" >
@@ -82,6 +84,8 @@ if (typeof FileReader !== "undefined" && (/image/i).test(file.type)) {
     var input = document.getElementById('file'),
         formdata = false;
 	var oculto =    document.getElementById('oculto').value;
+	var tfoto =    document.getElementById('tfoto').value;
+	var iduser =    document.getElementById('iduser').value;
     
     function mostrarImagenSubida(source){
         var list = document.getElementById('lista-imagenes'),
@@ -132,6 +136,8 @@ if (typeof FileReader !== "undefined" && (/image/i).test(file.type)) {
                             //value: El valor del campo (puede ser de tipo Blob, File e incluso string)
                         formdata.append('file[]', file);
                         formdata.append('oculto', oculto);
+                        formdata.append('iduser', iduser);
+                        formdata.append('tfoto', tfoto);
                 }
             }
             

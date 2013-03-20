@@ -4,7 +4,6 @@
 error_reporting(E_ALL);
 ini_set('display_errors', TRUE);
 ini_set('display_startup_errors', TRUE);
-*/
 $arr = array(
 "Es originario del lugar y acredita mínimo 2 años de residencia?", 
 "Presentó original con copia del acta de nacimiento para su cotejo y devolución?", 
@@ -17,6 +16,7 @@ $arr = array(
 "Es servidor público federal",
 "Presenta por lo menos 50 firmas de votantes que lo apoyan en su comunidad",
 );
+*/
 date_default_timezone_set('America/Mexico_City');
 
 require_once('../vo/voConn.php');

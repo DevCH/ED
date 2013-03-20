@@ -34,7 +34,8 @@
 	<button id="delItem">Quitar</button>
 	<!--<button id="refreshTable">Actualizar</button>-->
 	<button id="find">Buscar</button>
-	<button id="addPic">Agregar foto</button>
+	<button id="addPic">Agregar foto propietario</button>
+	<button id="addPic2">Agregar foto suplente</button>
 	<button id="printReg">Imprimir Registro</button>
 	<span id="spanTitle">Candidatos Registrados</span>
 </div>
@@ -173,10 +174,12 @@ input[name='datofis']{width:90% !important;}
 	$( "#delItem" ).button({text: true,icons: {primary: "ui-icon-minusthick"}});
 	/*$( "#refreshTable" ).button({text: true,icons: {primary: "ui-icon-refresh"}})*/
 	$( "#addPic").button({text: true,icons: {primary: "ui-icon-person"}})
+	$( "#addPic2").button({text: true,icons: {primary: "ui-icon-person"}})
 	$( "#find").button({text: true,icons: {primary: "ui-icon-search"}})
 	$( "#printReg" ).button({text: true,icons: {primary: "ui-icon-print"}})
 
 	$( "#addPic").hide();
+	$( "#addPic2").hide();
 	$( "#printReg" ).hide();
 
 	$.each(objInAuto, function(i, item) {
@@ -342,6 +345,7 @@ function editarRegistroActual(){
 	$("#idreg").val(parseInt(arrItems[index].idreg));
 	
 	$( "#addPic").show();
+	$( "#addPic2").show();
 	$( "#printReg" ).show();
 	
 	
@@ -456,7 +460,16 @@ function invocarFormulario(responseText, statusText, xhr, $form){
 $("#addPic").on('click',function(event){
 	//var queryString = $("#formBody").formSerialize();  
 
-	$.post(och.getValue(0)+"php/01/com/imageUpload.php", { idreg:parseInt(arrItems[index].idreg), idu:iduser },
+	$.post(och.getValue(0)+"php/01/com/imageUpload.php", { idreg:parseInt(arrItems[index].idreg), idu:iduser,tfoto:0 },
+		function(json){
+			if (json.length<=0) { return false;}
+			$(".asignaciones1").html(json);
+ 	}, "html");
+});
+
+$("#addPic2").on('click',function(event){
+	//var queryString = $("#formBody").formSerialize();  
+	$.post(och.getValue(0)+"php/01/com/imageUpload.php", { idreg:parseInt(arrItems[index].idreg), idu:iduser,tfoto:1 },
 		function(json){
 			if (json.length<=0) { return false;}
 			$(".asignaciones1").html(json);

@@ -433,12 +433,12 @@ class oCentura {
 					case 200:
 						switch($tipo){
 							case 0:
-								$query = "SELECT prodgpo as label, idprodgpo as data 
+								$query = "SELECT abr as label, idprodgpo as data 
 										FROM productos_grupo Order By data asc ";
 								break;		
 							case 1:
 								$ar = explode(".",$arg);
-								$query = "SELECT d.prodgpo AS label, count(n.iddependencia) AS data  
+								$query = "SELECT d.abr AS label, count(n.iddependencia) AS data  
 										FROM denuncias n LEFT JOIN productos_grupo d ON n.iddependencia = d.idprodgpo 
 										WHERE (n.fecha_ingreso BETWEEN '$ar[0]' AND '$ar[1]') GROUP BY n.iddependencia  LIMIT 0 , 30";	
 											
@@ -873,9 +873,13 @@ break;
 								//parse_str($arg);
 								$x = explode("|",$arg);
 								$idusr = $this->getIdUser($x[0]);
-								
-								$query = "update ed_registros set foto = '$x[2]', modi_por = $idusr
-														where idreg = $x[1]";
+								if ($limite == 0){
+									$query = "update ed_registros set foto  = '$x[2]', modi_por = $idusr
+											where idreg = $x[1]";
+								}else{
+									$query = "update ed_registros set foto2 = '$x[2]', modi_por = $idusr
+											where idreg = $x[1]";
+								}
 								$result = mysql_query($query);
 								$vRet = $result!=1? "CMHR ".mysql_error():"OK";
 								break;		

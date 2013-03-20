@@ -17,13 +17,13 @@ class oFunctions {
 	 
 	 private function __construct(){ 
 	 		$this->pregu = array(
-						"Constancia de residencia con mínimo de 2 años y debidamente requisitada por el delegado de la localidad o por el secretario del ayuntamiento", 
+						"Constancia de residencia con mínimo de 2 años y debidamente requisitada por el Delegado de la localidad o por el Secretario del Ayuntamiento", 
 						"Presenta original y copia del acta de nacimiento para su cotejo y devolución", 
-						"Presenta original y copia de la credencial de elector(IFE)", 
-						"Presenta carta de grado de estudio o carta bajo protesta de decir verdad (sabe leer y escribir)",
+						"Dice ser mayor de 18 años y presenta original y copia de la credencial de elector (IFE)", 
+						"Presenta carta de grado de estudios o carta bajo protesta de decir verdad (sabe leer y escribir)",
 						"Presenta constancia de laicismo de la Coordinación de Asuntos Religiosos del Estado",
 						"Presenta Carta de NO Antecedentes Penales",
-						"Constancia de NO ser propietario o administrador de establecimiento que expenda licores o bebidas embriagantes. Emitida por la Unidad de Alcoholes de la Secretaría de Finanzas del Estado",
+						"Constancia de NO ser propietario o administrador de establecimiento que expenda licores o bebidas embriagantes, emitida por la Unidad de Alcoholes de la Secretaría de Finanzas del Estado",
 						"Carta de NO haber sido Delegado(a) en funciones durante el periodo inmediato anterior (formato proporcionado por el H. Ayuntamiento)",
 						"Carta bajo protesta de decir verdad de NO ser funcionario Federal, Estatal o Municipal",
 						"Presenta formato de apoyo ciudadano debidamente requisitado con no menos de 75 firmas (formato proporcionado por el H. Ayuntamiento)",

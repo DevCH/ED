@@ -7,6 +7,7 @@ class vo_ed_Registros{
 	 public $nformula;
 	 public $observaciones;
 	 public $foto;
+	 public $foto2;
 	 public $op1;
 	 public $op1_desc;
 	 public $op2;
